@@ -2,7 +2,7 @@ set -e
 #Openstack Configuration 
 
 OPENSTACK_VERSION=$(whiptail --menu " Choose an OpenStack Cloud version ☁︎ " --title " Openstack Version ☁️" 18 100 10 \
-  "2023.2" " OpenStack stable  " 3>&1 1>&2 2>&3) 
+  "2023.2" " OpenStack Bobcat stable version " 3>&1 1>&2 2>&3) 
 OPENSTACK_VIP=$(whiptail --inputbox "Please Enter the OpenStack VIP  " --title " OpenStack Vıp " 10 65 3>&1 1>&2 2>&3 )
 INTERNAL_NIC_NAME=$(whiptail --inputbox "Please Enter the Primary NIC Name (EX:- eth0 ens192..) " --title " OpenStack Primary NIC 🔗 " 10 65 3>&1 1>&2 2>&3 )
 EXTERNAL_NIC_NAME=$(whiptail --inputbox "Please Enter the Secondary NIC Name (EX:- eth1 ens224..) " --title " OpenStack Secondary NIC 🔗 " 10 65 3>&1 1>&2 2>&3 )
